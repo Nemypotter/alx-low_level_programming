@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Prints the size of various types based on the computer it is compiled and run on
- * Return 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
