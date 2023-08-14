@@ -1,26 +1,30 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations of three digits.
- * Number must be separated by a coma
+ * main - Prints all posiible different combinations of three digits.
+ * Digits must be separated by a comma101-print_comb4.c101-print_comb4.c
  * Return: 0 (success)
  */
 int main(void)
 {
-	int a, b;
+	int a, b, c;
 
-	for (a = 48; a <= 56; a++)
+	for (a = 48; a < 58; a++)
 	{
-		for (b = 49; b <= 57; b++)
+		for (b = 49; b < 58; b++)
 		{
-			if (b > a)
+			for (c = 50; c < 58; c++)
 			{
-				putchar(a);
-				putchar(b);
-				if (a != 56 || b != 57)
+				if (c > b && b > a)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(a);
+					putchar(b);
+					putchar(c);
+					if (a != 55 || b != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
