@@ -8,6 +8,7 @@
 char *reverse(char *r, int n)
 {
 	int j, temp;
+
 	for (j = 0; j < n; n--, j++)
 	{
 		temp = r[n];
@@ -27,6 +28,7 @@ char *reverse(char *r, int n)
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int size1 = 0, size2 = 0, k, rest = 0, n;
+
 	while (n1[size1] != '\0')
 		size1++;
 	while (n2[size2] != '\0')
