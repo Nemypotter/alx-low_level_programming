@@ -1,4 +1,7 @@
-#include <stdio.h>
+#ifndef DOG_H
+#define DOG_H
+
+#include <stdlib.h>
 #include "dog.h"
 
 /**
@@ -9,7 +12,7 @@
  * @owner: owner to initialize
  */
 
-void init_dog(struct dog *d, char *name, float age, char owner)
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d == NULL)
 		d = malloc(sizeof(struct dog));
@@ -17,3 +20,4 @@ void init_dog(struct dog *d, char *name, float age, char owner)
 	d->age = age;
 	d->owner = owner;
 }
+#endif
