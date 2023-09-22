@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 void first(void)__attribute__((constructor));
 /**
  * first - prints a sentence before the main
