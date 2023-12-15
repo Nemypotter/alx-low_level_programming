@@ -7,7 +7,7 @@
  *
  * Return: value of the (base ^ power)
  */
-unsigned long int _pow (unsigned int base, unsigned int power)
+unsigned long int _pow(unsigned int base, unsigned int power)
 {
 	unsigned long int num;
 	unsigned int a;
